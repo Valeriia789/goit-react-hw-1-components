@@ -10,7 +10,7 @@ import {
   UserLocation
 } from './Profile.styled'
 
-export const Profile = ({ user: username, tag, location, avatar, stats }) => {
+export const Profile = ({ username, tag, location, avatar, stats }) => {
   console.log(username)
 
   return (

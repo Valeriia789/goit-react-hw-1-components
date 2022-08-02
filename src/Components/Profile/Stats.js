@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { StatsList, StatsItem, Quantity } from './Stats.styled'
 
-export const Stats = ({ stats: followers, views, likes }) => {
+export const Stats = ({ followers, views, likes }) => {
   console.log(followers, views, likes)
 
   return (
