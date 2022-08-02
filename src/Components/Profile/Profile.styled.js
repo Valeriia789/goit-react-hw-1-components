@@ -16,49 +16,51 @@ export const Container = styled.div`
 `
 
 export const Description = styled.div`
+  /* width: 100%; */
   text-align: center;
   background-color: rgba(84, 104, 110, 0.4);
 `
 
 export const Avatar = styled.img`
+  margin-top: 10px;
   width: 200px;
-  background-color: #fff;
   border-radius: 45%;
 `
 
 export const UserName = styled.p`
+  margin-top: 10px;
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 3px;
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 0;
   color: #dce3e7;
+  text-shadow: 1px 1px 2px black;
 `
 
 export const Line = styled.hr`
-  width: 70px;
+  width: 100px;
   height: 3px;
-  margin: 20px auto;
+  margin: 5px auto 0 auto;
   border: 0;
-
-  box-shadow: 0 0 3px #0f0000, 0 0 5px #0000f0;
+  box-shadow: 0 0 3px yellow, 0 0 5px yellow;
 `
 
 export const UserTag = styled.p`
-  width: 170px;
-  margin: 0 auto;
-  color: #dce3e7;
-  text-shadow: 0 0 3px #0f0000, 0 0 5px #0000f0;
+  margin-top: 50px;
+  color: whitesmoke;
+  text-shadow: 0 0 3px yellow, 0 0 5px yellow;
   font-family: 'Droid Serif', serif;
   font-size: 20px;
   line-height: 18px;
 `
 
 export const UserLocation = styled.p`
+  margin-top: 10px;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 3px;
   color: #dce3e7;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
+  text-shadow: 1px 1px 2px black;
 `

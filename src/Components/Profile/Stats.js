@@ -1,31 +1,25 @@
 import PropTypes from 'prop-types'
-import {
-  StatsContainer,
-  StatsRow,
-  StatsIcon,
-  Label,
-  Quantity
-} from './Stats.styled'
+import { StatsList, StatsItem, Label, Quantity } from './Stats.styled'
 
 export const Stats = ({ followers, views, likes }) => {
   return (
-    <StatsContainer>
-      <StatsRow>
-        <StatsIcon>&#128694;</StatsIcon>
-        <StatsIcon>&#128064;</StatsIcon>
-        <StatsIcon>&#10084;</StatsIcon>
-      </StatsRow>
-      <StatsRow>
+    <StatsList>
+      <StatsItem>
+        <span>&#128694;</span>
         <Label>Followers </Label>
-        <Label>Views </Label>
-        <Label>Likes </Label>
-      </StatsRow>
-      <StatsRow>
         <Quantity>{followers}</Quantity>
+      </StatsItem>
+      <StatsItem>
+        <span>&#128064;</span>
+        <Label>Views </Label>
         <Quantity>{views}</Quantity>
+      </StatsItem>
+      <StatsItem>
+        <span>&#10084;</span>
+        <Label>Likes </Label>
         <Quantity>{likes}</Quantity>
-      </StatsRow>
-    </StatsContainer>
+      </StatsItem>
+    </StatsList>
   )
 }
 
@@ -37,22 +31,32 @@ Stats.propTypes = {
   })
 }
 
-// import { StatsList, StatsItem, Quantity } from './Stats.styled'
+// import {
+//   StatsContainer,
+//   StatsRow,
+//   StatsIcon,
+//   Label,
+//   Quantity
+// } from './Stats.styled'
+
 // export const Stats = ({ followers, views, likes }) => {
 //   return (
-//     <StatsList>
-//       <StatsItem>
-//         <span>Followers </span>
+//     <StatsContainer>
+//       <StatsRow>
+//         <StatsIcon>&#128694;</StatsIcon>
+//         <StatsIcon>&#128064;</StatsIcon>
+//         <StatsIcon>&#10084;</StatsIcon>
+//       </StatsRow>
+//       <StatsRow>
+//         <Label>Followers</Label>
+//         <Label>Views</Label>
+//         <Label>Likes</Label>
+//       </StatsRow>
+//       <StatsRow>
 //         <Quantity>{followers}</Quantity>
-//       </StatsItem>
-//       <StatsItem>
-//         <span class='label'>Views </span>
 //         <Quantity>{views}</Quantity>
-//       </StatsItem>
-//       <StatsItem>
-//         <span class='label'>Likes </span>
 //         <Quantity>{likes}</Quantity>
-//       </StatsItem>
-//     </StatsList>
+//       </StatsRow>
+//     </StatsContainer>
 //   )
 // }

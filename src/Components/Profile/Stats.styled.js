@@ -1,42 +1,33 @@
 import styled from '@emotion/styled'
 
-export const StatsContainer = styled.table`
-  display: inline-table;
-  padding: 10px;
-`
+export const StatsList = styled.ul`
+  list-style-type: none;
 
-export const StatsRow = styled.tr`
   display: flex;
   justify-content: space-between;
+  margin-top: 60px;
+  padding: 0;
 `
 
-export const StatsIcon = styled.th``
+export const StatsItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding: 15px;
+`
 
-export const Label = styled.td`
+export const Label = styled.span`
+  font-size: 14px;
   color: lightgrey;
+  text-shadow: 0 0 3px #0f0000, 0 0 5px yellow;
 `
 
-export const Quantity = styled.td`
-  color: lightgrey;
-  text-shadow: 0 0 3px #0f0000, 0 0 5px #0000f0;
+export const Quantity = styled.span`
+  font-size: 14px;
+  color: white;
+  text-shadow: 0 0 3px #0f0000, 0 0 5px yellow;
 `
-
-// export const StatsList = styled.ul`
-//   list-style-type: none;
-// `
-
-// export const StatsItem = styled.li`
-//   font-weight: 600;
-//   letter-spacing: 2px;
-//   text-align: start;
-//   font-family: 'Roboto', sans-serif;
-//   color: #dce3e7;
-// `
-
-// export const Quantity = styled.span`
-//   color: white;
-//   text-shadow: 0 0 3px #0f0000, 0 0 5px #0000f0;
-// `
 
 // Text-shadow on a white text:
 // color: white;
@@ -47,3 +38,32 @@ export const Quantity = styled.td`
 
 // Text-shadow with a red and blue neon glow:
 // text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+
+// export const StatsContainer = styled.table`
+//   width: 100%;
+//   padding: 10px;
+//   margin-top: 70px;
+//   border-collapse: collapse;
+// `
+
+// export const StatsRow = styled.tr`
+//   display: flex;
+//   justify-content: space-evenly;
+// `
+
+// export const StatsIcon = styled.th`
+// margin-right: 10px;
+// `
+
+// export const Label = styled.td`
+//   margin-right: 20px;
+//   font-size: 12px;
+//   color: white;
+//   text-shadow: 0 0 3px #0f0000, 0 0 5px yellow;
+// `
+
+// export const Quantity = styled.td`
+//   font-size: 14px;
+//   color: lightgrey;
+//   text-shadow: 0 0 3px #0f0000, 0 0 5px yellow;
+// `
