@@ -6,12 +6,11 @@ export const StatsContainer = styled.table`
 `
 
 export const StatsRow = styled.tr`
-  color: lightgrey;
+  display: flex;
+  justify-content: space-between;
 `
 
-export const StatsIcon = styled.th`
-  color: lightgrey;
-`
+export const StatsIcon = styled.th``
 
 export const Label = styled.td`
   color: lightgrey;

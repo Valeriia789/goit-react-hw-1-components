@@ -1,13 +1,19 @@
 import PropTypes from 'prop-types'
-import { StatsContainer, StatsRow, StatsIcon, Label, Quantity } from './Stats.styled'
+import {
+  StatsContainer,
+  StatsRow,
+  StatsIcon,
+  Label,
+  Quantity
+} from './Stats.styled'
 
 export const Stats = ({ followers, views, likes }) => {
   return (
     <StatsContainer>
       <StatsRow>
-        <StatsIcon>👣</StatsIcon>
-        <StatsIcon>👁</StatsIcon>
-        <StatsIcon>❤</StatsIcon>
+        <StatsIcon>&#128694;</StatsIcon>
+        <StatsIcon>&#128064;</StatsIcon>
+        <StatsIcon>&#10084;</StatsIcon>
       </StatsRow>
       <StatsRow>
         <Label>Followers </Label>
@@ -30,7 +36,6 @@ Stats.propTypes = {
     likes: PropTypes.number.isRequired
   })
 }
-
 
 // import { StatsList, StatsItem, Quantity } from './Stats.styled'
 // export const Stats = ({ followers, views, likes }) => {
