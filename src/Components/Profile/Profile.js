@@ -11,8 +11,6 @@ import {
 } from './Profile.styled'
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
-  console.log(username)
-
   return (
     <Container>
       <Description>
