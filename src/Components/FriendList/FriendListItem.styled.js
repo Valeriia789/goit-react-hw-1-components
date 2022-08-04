@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+
 // const statusColor = friends => {
 //   switch (friends.isOnline) {
 //     case true:
@@ -10,15 +11,17 @@ import styled from '@emotion/styled'
 //   }
 // }
 
-const statusColor = (props) => {
-  
+const statusColor = isOnline => {
+  console.log(isOnline)
+  return isOnline === true ? 'green' : 'red'
 }
 
-export const Item = styled.li``
+export const Item = styled.li`
+  display: flex;
+  flex-wrap: wrap;
+`
 
 export const Status = styled.span`
   border-radius: 50%;
-  background: ${statusColor}
+  background: ${statusColor};
 `
-
-
