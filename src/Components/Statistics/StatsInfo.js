@@ -13,10 +13,12 @@ export const StatsInfo = ({ statInfo }) => {
   )
 }
 
-// StatsInfo.propTypes = {
-//   statInfo: PropTypes.shape({
-//     id: PropTypes.string.isRequired,
-//     label: PropTypes.string.isRequired,
-//     percentage: PropTypes.number.isRequired
-//   })
-// }
+StatsInfo.propTypes = {
+  statInfo: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired
+    }).isRequired
+  )
+}

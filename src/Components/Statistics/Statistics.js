@@ -2,7 +2,6 @@ import PropTypes from 'prop-types'
 import { StatsInfo } from './StatsInfo'
 
 export const Statistics = ({ title, stats }) => {
-  console.log(stats)
   return (
     <section>
       <h2>{title}</h2>
