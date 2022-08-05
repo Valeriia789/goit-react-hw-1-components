@@ -1,7 +1,11 @@
 import styled from '@emotion/styled'
 
 export const List = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 100%;
+  background: #eee;
+  list-style-type: none;
 `
