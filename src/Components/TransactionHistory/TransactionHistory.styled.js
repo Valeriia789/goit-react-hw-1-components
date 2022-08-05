@@ -1,17 +1,18 @@
 import styled from '@emotion/styled'
 
 export const Table = styled.table`
-  font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: ${props => props.theme.sizes.parentSize};
 `
 
 export const HeadItem = styled.th`
-  border: 1px solid #ddd;
-  padding: 8px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: ${p => p.theme.space[3]}px;
+  padding-top: ${p => p.theme.space[4]}px;
+  padding-bottom: ${p => p.theme.space[4]}px;
+
+  border: ${props => props.theme.borders.normal};
+  background: ${props => props.theme.colors.accent};
+  color: ${props => props.theme.colors.white};
+
   text-align: left;
-  background-color: #04AA6D;
-  color: white;
 `

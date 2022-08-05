@@ -9,44 +9,49 @@ const statusColor = props => {
 }
 
 export const Item = styled.li`
-  width: 300px;
-  height: 60px;
-  background: #eee;
-  border-bottom: 1px solid #ddd;
-  cursor: pointer;
   display: flex;
   align-items: center;
 
+  padding-top: ${p => p.theme.space[4]}px;
+  padding-bottom: ${p => p.theme.space[4]}px;
+  padding-left: ${p => p.theme.space[4]}px;
+
+  border-bottom: ${props => props.theme.borders.normal};
+  cursor: pointer;
+
   &:hover {
-    background: #ddd;
+    background: ${props => props.theme.colors.backgroundHover};
   }
 
   &:active {
-    background: pink;
+    background: ${props => props.theme.colors.accent};
   }
 `
 
 export const Avatar = styled.img`
-  width: 45px;
-  height: 45px;
-  border-radius: 30px;
-  border: 2px solid #aaa;
   object-fit: cover;
-  margin-left: 5px;
-  margin-right: 10px;
-  background: white;
+
+  width: ${props => props.theme.sizes.s};
+  height: ${props => props.theme.sizes.s};
+
+  margin-left: ${p => p.theme.space[3]}px;
+  margin-right: ${p => p.theme.space[4]}px;
+
+  border: ${props => props.theme.borders.medium};
+  border-radius: ${props => props.theme.radii.round};
+
+  background: ${props => props.theme.colors.white};
 `
 
 export const Name = styled.p`
-  font-size: 18px;
+  font-size: ${props => props.theme.fontSizes.m};
 `
 
 export const Status = styled.span`
   display: flexbox;
-  width: 15px;
-  height: 15px;
+  width: ${props => props.theme.sizes.point};
+  height: ${props => props.theme.sizes.point};
 
   background-color: ${statusColor};
-  color: transparent;
-  border-radius: 50%;
+  border-radius: ${props => props.theme.radii.round};
 `
