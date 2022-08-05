@@ -7,7 +7,7 @@ export const Container = styled.div`
   width: 350px;
   height: 500px;
   gap: 16px;
-  position: absolute;
+  /* position: absolute; */
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
