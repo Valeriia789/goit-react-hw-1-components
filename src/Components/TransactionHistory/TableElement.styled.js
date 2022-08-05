@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 export const TableRow = styled.tr`
-  &:nth-child(even) {
+  &:nth-of-type(even) {
     background-color: #f2f2f2;
   }
   &:hover {
