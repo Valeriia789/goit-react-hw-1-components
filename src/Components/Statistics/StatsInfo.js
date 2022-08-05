@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types'
+import {ListItem} from './StatsInfo.styled'
 
 export const StatsInfo = ({ statInfo }) => {
   return (
     <>
       {statInfo.map(stat => (
-        <li key={stat.id}>
-          <span>{stat.label}</span>
+        <ListItem key={stat.id}>
+          <p>{stat.label}</p>
           <span>{stat.percentage}%</span>
-        </li>
+        </ListItem>
       ))}
     </>
   )
