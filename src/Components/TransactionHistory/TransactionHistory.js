@@ -1,13 +1,14 @@
 import { TableElement } from './TableElement'
+import { Table, HeadItem } from './TransactionHistory.styled'
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <table>
+    <Table>
       <thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <HeadItem>Type</HeadItem>
+          <HeadItem>Amount</HeadItem>
+          <HeadItem>Currency</HeadItem>
         </tr>
       </thead>
 
@@ -21,6 +22,6 @@ export const TransactionHistory = ({ items }) => {
           />
         ))}
       </tbody>
-    </table>
+    </Table>
   )
 }

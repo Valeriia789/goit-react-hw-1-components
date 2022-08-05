@@ -1,9 +1,11 @@
+import {TableRow, RowItem} from './TableElement.styled'
+
 export const TableElement = ({ type, amount, currency }) => {
   return (
-    <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
+    <TableRow>
+      <RowItem>{type}</RowItem>
+      <RowItem>{amount}</RowItem>
+      <RowItem>{currency}</RowItem>
+    </TableRow>
   )
 }
