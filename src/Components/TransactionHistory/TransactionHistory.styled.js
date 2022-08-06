@@ -1,8 +1,11 @@
 import styled from '@emotion/styled'
 
 export const Table = styled.table`
-  border-collapse: collapse;
   width: ${props => props.theme.sizes.parentSize};
+  margin-top: ${p => p.theme.space[7]}px;
+
+  border-collapse: collapse;
+  box-shadow: ${props => props.theme.shadows.card};
 `
 
 export const HeadItem = styled.th`

@@ -1,32 +1,35 @@
 import styled from '@emotion/styled'
 
 export const StatsList = styled.ul`
-  list-style-type: none;
-
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
-  padding: 0;
+
+  margin-top: ${p => p.theme.space[8]}px;
+
+  border-top: ${props => props.theme.borders.dotted};
+  border-color: ${props => props.theme.colors.accent};
 `
 
 export const StatsItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
-  padding: 15px;
+
+  width: ${props => props.theme.sizes.third};
+  padding: ${p => p.theme.space[5]}px;
+
+  font-size: ${props => props.theme.fontSizes.s};
+  text-shadow: ${props => props.theme.shadows.text};
 `
 
 export const Label = styled.span`
-  font-size: 14px;
-  color: lightgrey;
-  text-shadow: 0 0 3px #0f0000, 0 0 5px yellow;
+  color: ${props => props.theme.colors.backgroundLight};
+  text-shadow: ${props => props.theme.shadows.text};
 `
 
 export const Quantity = styled.span`
-  font-size: 14px;
-  color: white;
-  text-shadow: 0 0 3px #0f0000, 0 0 5px yellow;
+  color: ${props => props.theme.colors.backgroundLight};
+  text-shadow: ${props => props.theme.shadows.text};
 `
 
 // Text-shadow on a white text:

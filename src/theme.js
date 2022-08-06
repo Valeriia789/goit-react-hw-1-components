@@ -11,13 +11,14 @@ export const theme = {
     accentDark: '#c0392b',
     white: '#fff',
     backgroundLight: '#eee',
-    backgroundHover: '#ddd',
+    backgroundHover: 'rgba(84, 104, 110, 0.4)',
   },
-  space: [0, 2, 4, 8, 12, 16, 32, 64, 128, 256],
+  space: [0, 2, 4, 8, 12, 16, 32, 50, 64, 128, 256],
   fonts: {
     body: 'system-ui, sans-serif',
     heading: 'system-ui, sans-serif',
-    monospace: 'Menlo, monospace'
+    monospace: 'Menlo, monospace',
+    roboto: 'Roboto, sans-serif'
   },
   fontSizes: {
     xs: '12px',
@@ -29,6 +30,11 @@ export const theme = {
   fontWeights: {
     normal: 400,
     bold: 700
+  },
+  letterSpacings: {
+    s: '1px',
+    m: '2px',
+    l: '3px',
   },
   lineHeights: {
     body: 1.5,
@@ -47,11 +53,18 @@ export const theme = {
     lg: '16px',
     round: '50%'
   },
+  shadows: {
+    text: '1px 1px 2px black, 1px 1px 2px black',
+    box: '0 0 3px #f39c12, 0 0 5px #f39c12',
+    card: '3px 3px 20px rgba(0, 0, 0, 0.5)',
+  },
   sizes: {
+    xxs: '2px',
     point: '15px',
     s: '50px',
     m: '100px',
-    l: '300px',
+    l: '200px',
+    third: '30%',
     halfSize: '50%',
     parentSize: '100%',
   }
