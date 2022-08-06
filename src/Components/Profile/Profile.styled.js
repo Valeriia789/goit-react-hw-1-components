@@ -13,15 +13,15 @@ export const Container = styled.div`
 
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/bg-blog-card.jpg);
   background-size: cover;
-
-  &:hover {
-    background-color: ${props => props.theme.colors.backgroundHover};
-  }
 `
 
 export const Description = styled.div`
   cursor: pointer;
   text-align: center;
+
+  &:hover {
+    background-color: ${props => props.theme.colors.backgroundHover};
+  }
 `
 
 export const Avatar = styled.img`
