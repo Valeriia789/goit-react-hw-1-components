@@ -5,12 +5,12 @@ import { StatisticSection, StatisticList } from './Statistics.styled'
 export const Statistics = ({ title, stats }) => {
   return (
     <StatisticSection>
-      <h2>{title}</h2>
+      {title && <h2>{title}</h2>}
+      {/* {title.length > 1 && <h2>{title}</h2>} */}
 
       <StatisticList>
         <StatsInfo statInfo={stats} />
       </StatisticList>
-
     </StatisticSection>
   )
 }
